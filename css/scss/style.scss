@@ -40,6 +40,10 @@ $couleur-texte-medium: #d3d3d3;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Baloo 2", cursive;
     background-color: #1d1d1d;
