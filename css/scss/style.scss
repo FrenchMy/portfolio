@@ -20,7 +20,7 @@ $couleur-texte-medium: #d3d3d3;
 }
 
 @mixin mille {
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1200px) {
         @content;
     }
 }
@@ -54,7 +54,7 @@ body {
     display: block;
     width: 90%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
     @include mobile() {
         height: auto
     }
@@ -173,10 +173,11 @@ nav {
     margin-right: auto;
     width: 32vw;
     height: auto;
+    margin-top: 2%;
     @include mobile() {
         width: 90vw;
         margin: 0;
-        padding-top: 20vw;
+        padding-top: 10vw;
     }
 }
 
@@ -201,7 +202,7 @@ nav {
     font-size: 3vw;
     color: $couleur-principale;
     font-family: Georgia, "Times New Roman", Times, serif;
-    margin: 10px 0;
+    margin: 10px 0 50px;
     @include mobile() {
         font-size: 7vw;
         margin-bottom: 50px;

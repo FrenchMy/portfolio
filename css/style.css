@@ -25,7 +25,7 @@ body {
   display: block;
   width: 90%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 }
 
 @media screen and (max-width: 650px) {
@@ -159,13 +159,14 @@ nav a {
   margin-right: auto;
   width: 32vw;
   height: auto;
+  margin-top: 2%;
 }
 
 @media screen and (max-width: 650px) {
   .logo {
     width: 90vw;
     margin: 0;
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
 }
 
@@ -191,7 +192,7 @@ nav a {
   font-size: 3vw;
   color: #0095ff;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 10px 0;
+  margin: 10px 0 50px;
 }
 
 @media screen and (max-width: 650px) {
