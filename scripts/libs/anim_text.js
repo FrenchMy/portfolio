@@ -1,7 +1,7 @@
 class TextScramble {
     constructor(el) {
         this.el = el
-        this.chars = '!<>-_\\/[]{}—=+*^?#________'
+        this.chars = '!<>-_\\/[]{}—=+*^?#______'
         this.update = this.update.bind(this)
     }
     setText(newText) {
@@ -59,9 +59,7 @@ class TextScramble {
 const phrases = [
     'Étudiant',
     'Intégrateur Web',
-    'Développeur Frontend',
-    'Web Designer',
-    'Designer Interface Utilisateur'
+    'Développeur Frontend'
 ]
 
 const el = document.querySelector('.text')
