@@ -475,7 +475,7 @@ nav {
     display: none;
     position: fixed;
     top: 11.5vh;
-    left: 3.2vw;
+    right: 3.2vw;
     height: 50px;
     width: 50px;
     z-index: 110;
@@ -484,7 +484,7 @@ nav {
         top: 1vh;
     }
     i {
-        color: red;
+        color: $couleur-principale;
         font-size: 50px;
         background-color: #fff;
         border-radius: 50%;
@@ -514,6 +514,19 @@ nav {
         img {
             border-radius: 20px;
             box-shadow: 4px 4px 5px $couleur-texte-medium;
+        }
+        p {
+            color: $couleur-secondaire;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .lien-visite {
+            text-decoration: none;
+            color: $couleur-principale;
+            font-size: 1.5rem;
+            padding: 0px 20px;
+            border: 2px solid $couleur-principale;
+            border-radius: 10px;
         }
     }
     overflow-y: scroll;
@@ -604,6 +617,10 @@ nav {
     @include flex();
     .flex-tier {
         text-align: center;
+        a {
+            text-decoration: none;
+            color: $couleur-texte-clair;
+        }
         i {
             font-size: 5vw;
             margin: 5vh 0;

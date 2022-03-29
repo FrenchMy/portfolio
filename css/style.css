@@ -144,7 +144,7 @@ nav a {
     display: block;
     position: fixed;
     color: #faf7f3;
-    background-image: linear-gradient(#003f6e 60%, rgba(255, 0, 0, 0));
+    background-image: linear-gradient(#003f6e 60%, #00000000);
     padding: 15px;
     font-size: 2.2em;
     height: 100px;
@@ -543,7 +543,7 @@ nav a {
   display: none;
   position: fixed;
   top: 11.5vh;
-  left: 3.2vw;
+  right: 3.2vw;
   height: 50px;
   width: 50px;
   z-index: 110;
@@ -557,7 +557,7 @@ nav a {
 }
 
 .cloture i {
-  color: red;
+  color: #0095ff;
   font-size: 50px;
   background-color: #fff;
   border-radius: 50%;
@@ -597,6 +597,21 @@ nav a {
 #maquette .flex-demi img {
   border-radius: 20px;
   box-shadow: 4px 4px 5px #d3d3d3;
+}
+
+#maquette .flex-demi p {
+  color: #252525;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#maquette .flex-demi .lien-visite {
+  text-decoration: none;
+  color: #0095ff;
+  font-size: 1.5rem;
+  padding: 0px 20px;
+  border: 2px solid #0095ff;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 650px) {
@@ -711,6 +726,11 @@ nav a {
 
 #contact .flex-tier {
   text-align: center;
+}
+
+#contact .flex-tier a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #contact .flex-tier i {
