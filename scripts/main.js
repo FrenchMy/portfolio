@@ -87,6 +87,7 @@ function fermerPageListe() {
 const boutonBurger = document.querySelector(".burger");
 const navigation = document.querySelector("nav");
 const container = document.querySelector(".main-container");
+const navSection = document.querySelectorAll(".nav-section");
 
 
 boutonBurger.addEventListener("click", evt => {
