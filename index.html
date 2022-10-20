@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio de Rémy Beaumont, développeur web et web designer. De la conception au développement, je crée des sites et des applications web sur-mesure." />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="styles/style.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script src="scripts/libs/anim_text.js" defer></script>
-    <!-- <script src="scripts/libs/smoothscroll.js"></script>
-    <script src="scripts/scroll.js" defer></script> -->
     <script src="scripts/main.js" defer></script>
     <title>Wolfoxy - Portfolio</title>
 </head>
 
 <body>
-    <header>
+    <header id="navigation">
         <nav>
-            <a href="#accueil" class="nav-section">Accueil</a>
+            <a href="#principal" class="nav-section">Accueil</a>
             <a href="#a-propos" class="nav-section">À Propos</a>
             <a href="#moncv" class="nav-section">C.V.</a>
             <a href="#realisations" class="nav-section">Réalisations</a>
@@ -31,321 +29,330 @@
     </header>
 
     <main class="main-container">
-        <section id="accueil" class="container">
+        <section id="principal">
             <div class="flex-container">
-                <div class="flex100">
-                    <img src="images/logo_Wolfoxy.png" class="logo" />
+                <div class="logo">
+                    <img src="images/logo_Wolfoxy.png" class="fluide" />
                 </div>
                 <h1 class="nom">Rémy Beaumont</h1>
                 <div class="text"></div>
             </div>
         </section>
 
-        <section id="a-propos" class="container">
+        <section id="a-propos">
             <section class="flex-container">
-                <h1 class="flex100 title_princ">À propos de moi :</h1>
-                <div class="flex-tier">
+                <h2 class="titre">À propos de moi</h2>
+                <div class="photo">
                     <img src="images/profil.jpg" class="profil" />
                 </div>
-                <article class="a-propos">
+                <article class="presentation">
                     <p>
-                        Bon Matin ! Je m'appelle Rémy Beaumont, je suis actuellement étudiant pour l'obtention d'un DEC en Techniques d'Intégration Multimédia au CÉGEP de Matane.
+                        Bon Matin ! Je m'appelle Rémy Beaumont, je suis actuellement <span>étudiant</span> pour l'obtention d'un DEC en Techniques d'Intégration Multimédia au CÉGEP de Matane.
                     </p>
                     <br />
                     <p>
-                        Je suis originaire de France, et plus précisément l'Île de La Réunion. Avoir plusieurs cultures donne à ma "French touch" un coté plus exotique.
+                        Je suis originaire de France, et plus précisément <span>l'Île de La Réunion</span>. Avoir plusieurs cultures donne à ma <span>"French touch"</span> un coté plus exotique.
                     </p>
                     <br />
                     <p>
-                        Passionné par le web de manière générale, j'aimerais me spécialisé dans l'intégration web, avec des notions de design web et d'UX/UI.
+                        Passionné par le web de manière générale, j'aimerais me spécialiser dans l'<span>intégration web</span>, avec des notions de design web et d'UX/UI.
                     </p>
                     <br />
                     <p>
-                        L'apprentissage et l'expérience professionnelle sont pour moi des valeurs très importantes, et c'est grâce à mon parcours professionnel plutôt atypique que je suis capable de me démarquer.
+                        L'apprentissage et l'<span>expérience professionnelle</span> sont pour moi des valeurs très importantes, et c'est grâce à mon parcours professionnel plutôt atypique que je suis capable de me démarquer.
                     </p>
                 </article>
             </section>
         </section>
 
-        <section id="moncv" class="container">
+        <section id="moncv">
             <section class="flex-container">
-                <h1 class="flex100 title_princ">Curriculum Vitae</h1>
-                <div class="flex60">
-                    <section id="cvText">
-                        <h2>Diplômes</h2>
+                <h2 class="titre">Curriculum Vitae</h2>
+                <div class="gauche">
+                    <section class="cv-text">
+                        <h3>Diplômes</h3>
                         <article>
-                            <p>
-                                <li><b>2019 - en cours</b></li>
-                            </p>
+                            <li><b>2019 - en cours</b></li>
                             <p>
                                 DEC Technique Intégration Multimédia, Cégep de Matane, Matane, Québec, Canada
                             </p>
-                            <p>
-                                <li><b>2014 - 2015</b></li>
-                            </p>
+                            <li><b>2014 - 2015</b></li>
                             <p>
                                 CAP esthétique cosmétique parfumerie, école privée esthétique et cosmétique Élégance Gontard Nice, France
                             </p>
-                            <p>
-                                <li><b>2014-2015</b></li>
-                            </p>
+                            <li><b>2014 - 015</b></li>
                             <p>
                                 Diplôme SPA praticien, école privée esthétique et cosmétique Élégance Gontard Nice, France
                             </p>
-                            <p>
-                                <li><b>2008</b></li>
-                            </p>
+                            <li><b>2006 - 2008</b></li>
                             <p>
                                 BACCALAUREAT, Sciences et Technologies Industrielles, Génie Mécanique Productique - Lislet Geoffroy, Saint-Denis Île de la Réunion
                             </p>
                         </article>
-                        <h2>Expériences professionnelles</h2>
+                        <h3>Expériences professionnelles</h3>
                         <article>
+                            <li><b>2022 - aujourd'hui</b></li>
                             <p>
-                                <li><b>2016-2019</b></li>
+                                Développeur Web, CIUSSS MCQ, Trois-Rivières, Québec, Canada
                             </p>
+                            <li><b>2016 - 2019</b></li>
                             <p>
                                 Conseiller à la vente, Atout pc’s, Sainte-Marie, Île de la Réunion
                             </p>
-                            <p>
-                                <li><b>2014-2015</b></li>
-                            </p>
+                            <li><b>2014 - 2015</b></li>
                             <p>
                                 Stage pratique SPA et esthétique, atelier pratique Ecole Elégance Gontard, Nice, France
                             </p>
                             <p>
                                 Stage validation de diplôme, Spa hôtelier **** Amarante Golf Plaza Sainte-Maxime, France
                             </p>
-                            <p>
-                                <li><b>2009 - 2014</b></li>
-                            </p>
+                            <li><b>2009 - 2014</b></li>
                             <p>
                                 Agent polyvalent au grade de Caporal-Chef, Service des Essences des Armées, Ministère de la Défense, Chalon-sur-Saône, France
                             </p>
                         </article>
-                        <h2>Aptitudes professionnelles</h2>
+                        <h3>Aptitudes professionnelles</h3>
                         <article class="milieu">
-                            <li class="inline">Ponctuel</li>
-                            <li class="inline">Perfectionniste</li>
-                            <li class="inline">Polyvalant</li>
-                            <li class="inline">Discipliné</li>
+                            <li>Ponctuel</li>
+                            <li>Perfectionniste</li>
+                            <li>Polyvalant</li>
+                            <li>Discipliné</li>
                         </article>
                     </section>
                 </div>
 
-                <div class="flex-tier">
-                    <section class="center">
+                <div class="droite">
+                    <section class="centre">
                         <h2>Compétences techniques</h2>
 
-                        <div class="skillBox">
+                        <div class="boite">
                             <p>HTML</p>
                             <div class="skill">
-                                <div class="skill_level" style="width: 90%"></div>
+                                <img src="images/skills/html.png" alt="logo html" class="fluide">
                             </div>
                         </div>
 
-                        <div class="skillBox">
+                        <div class="boite">
                             <p>CSS</p>
                             <div class="skill">
-                                <div class="skill_level" style="width: 90%"></div>
+                                <img src="images/skills/css.png" alt="logo css" class="fluide">
                             </div>
                         </div>
 
-                        <div class="skillBox">
-                            <p>Javascript</p>
+                        <div class="boite">
+                            <p>Sass</p>
                             <div class="skill">
-                                <div class="skill_level" style="width: 65%"></div>
+                                <img src="images/skills/sass.png" alt="logo sass" class="fluide">
                             </div>
                         </div>
 
-                        <div class="skillBox">
-                            <p>Vue JS</p>
+                        <div class="boite">
+                            <p>javascript</p>
                             <div class="skill">
-                                <div class="skill_level" style="width: 60%"></div>
+                                <img src="images/skills/js.png" alt="logo javascript" class="fluide">
                             </div>
                         </div>
 
-                        <div class="skillBox">
+                        <div class="boite">
                             <p>WordPress</p>
                             <div class="skill">
-                                <div class="skill_level" style="width: 65%"></div>
+                                <img src="images/skills/wp.png" alt="logo wordpress" class="fluide">
                             </div>
                         </div>
 
-                        <div class="skillBox">
+                        <div class="boite">
+                            <p>Vue js</p>
+                            <div class="skill">
+                                <img src="images/skills/vue.png" alt="logo vue" class="fluide">
+                            </div>
+                        </div>
+
+                        <div class="boite">
                             <p>Suite Adobe</p>
                             <div class="skill">
-                                <div class="skill_level" style="width: 70%"></div>
+                                <img src="images/skills/adobe.png" alt="logo adobe" class="fluide">
                             </div>
                         </div>
                     </section>
-                    <a href="telechargement/remy cv2022.pdf" download="Curriculum Vitae Beaumont Remy" class="mycv">C.V.</a
-            >
-          </div>
+                    <a href="telechargement/remy cv2022.pdf" download="Curriculum Vitae Beaumont Remy" class="cv">C.V.</a>
+                </div>
+            </section>
         </section>
-      </section>
 
-      <div class="cloture"><i class="far fa-times-circle"></i></div>
-      <div class="maquette" id="maquette">
-        <div class="flex-demi">
-          <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/maldives/" target="_blank">
-            <img src="images/maquette_maldives.jpg" alt="site web fictif - Les Maldives" class="fluide"/>
-          </a>
-                </div>
-                <div class="flex-demi">
-                    <p>Site fictif sur le thème des Maldives réalisé individuellement pour un travail pratique durant la 3ème session</p>
-                    <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/maldives/" target="_blank">
-            visitez le site
-          </a>
-                </div>
-                <div class="flex-demi">
-                    <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/metallica/" target="_blank">
-                        <img src="images/maquette_metallica.jpg" alt="site web fictif - Metallica" class="fluide" />
-                    </a>
-                </div>
-                <div class="flex-demi">
-                    <p>Site fictif aux couleurs du groupe de métal, Metallica, réalisé individuellement pour un travail pratique durant la 3ème session - compétence évalué : grid - local storage</p>
-                    <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/metallica/" target="_blank">
-                    visitez le site
-                  </a>
-                </div>
-                <div class="flex-demi">
-                    <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/retrohighway/" target="_blank">
-                        <img src="images/maquette_retro.jpg" alt="site web jeu fictif - Retro HightWay" class="fluide" />
-                    </a>
-                </div>
-                <div class="flex-demi">
-                    <p>Mini-jeu réalisé individuellement pour un examen de fin de session durant la 3ème session - compétence évalué : Canvas</p>
-                    <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/retrohighway/" target="_blank">
-                    visitez le site
-                  </a>
-                </div>
-                <div class="flex-demi">
-                    <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/steamy/" target="_blank">
-                        <img src="images/maquette_streamy.jpg" alt="site web fictif - Streamy" class="fluide" />
-                    </a>
-                </div>
-                <div class="flex-demi">
-                    <p>site web fictif réalisé individuellement pour un travail pratique durant la 2ème session - compétence évalué : formulaire et requete SQL</p>
-                    <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/steamy/" target="_blank">
-                    visitez le site
-                  </a>
-                </div>
-                <div class="flex-demi">
-                    <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/ultimavid/" target="_blank">
-                        <img src="images/maquette_ultimavid.jpg" alt="mini-jeu escape game" class="fluide" />
-                    </a>
-                </div>
-                <div class="flex-demi">
-                    <p>Mini-jeu réalisé en équipe de 3 pour un travail pratique durant la 4ème session de projet multimedia - rôle dans l'équipe : programmation et intégration</p>
-                    <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/ultimavid/" target="_blank">
-                    visitez le site
-                  </a>
-                </div>
-                </div>
-                <div class="application" id="application">
-                    <div class="flex-demi">
-                        <a href="https://xd.adobe.com/embed/a9b57d2d-f8df-48dd-8db9-2feb3a55e5e4-fce6/?fullscreen" target="_blank">
-                            <img src="images/appli_phos.jpg" alt="Application fictive du festival Phos" title="Application fictive du festival PHOS" class="fluide" />
-                        </a>
-                    </div>
-                    <div class="flex-demi">
-                        <a href="https://xd.adobe.com/embed/06fdb60e-5912-4ac1-ba36-5918680ea04c-53ae/?fullscreen" target="_blank">
-                            <img src="images/appli_borne.jpg" title="Application fictive d'une borne interactive d'un aquarium" alt="Application fictive de borne interactive" class="fluide" />
-                        </a>
-                    </div>
-                </div>
-                <div class="logo" id="logo">
-                    <div class="flex-demi">
-                        <img src="images/logo_Wolfoxy.jpg" alt="logo Wolfoxy" class="fluide" />
-                    </div>
-                    <div class="flex-demi">
-                        <img src="images/logo_berceau.jpg" alt="logo Berceau" class="fluide" />
-                    </div>
-                    <div class="flex-demi">
-                        <img src="images/logo_Melodia.jpg" alt="logo chaine youtube Melodia" class="fluide" />
-                    </div>
-                    <div class="flex-demi">
-                        <img src="images/logo_va_immo.jpg" alt="logo vendeur immobilier Victor Andréa Perego" class="fluide" />
-                    </div>
-                </div>
+        <div class="cloture">
+            <i class="far fa-times-circle"></i>
+        </div>
 
-                <section id="realisations" class="container">
-                    <div class="flex-container">
-                        <h1 class="flex100 title_princ">Réalisations</h1>
+        <div class="maquette" id="maquette">
 
-                        <div class="flex-tier box" id="clic-maquette">
-                            <div class="filtre">
-                                <img src="images/exemple_maquette.jpg" alt="exemple de site web" class="fluide" />
-                            </div>
-                            <div class="details">
-                                <div>
-                                    <h2>Maquettes</h2>
-                                    <p>Mes différents projets en rapport aux site web.</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="flex-demi">
+                <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/maldives/" target="_blank">
+                    <img src="images/maquette_maldives.jpg" alt="site web fictif - Les Maldives" class="fluide"/>
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>Site fictif sur le thème des Maldives réalisé individuellement pour un travail pratique durant la 3ème session</p>
+                <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/maldives/" target="_blank">
+                visitez le site
+                </a>
+            </div>
+            <div class="flex-demi">
+                <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/metallica/" target="_blank">
+                    <img src="images/maquette_metallica.jpg" alt="site web fictif - Metallica" class="fluide" />
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>Site fictif aux couleurs du groupe de métal, Metallica, réalisé individuellement pour un travail pratique durant la 3ème session - compétence évalué : grid - local storage</p>
+                <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/metallica/" target="_blank">
+                        visitez le site
+                </a>
+            </div>
+            <div class="flex-demi">
+                <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/retrohighway/" target="_blank">
+                    <img src="images/maquette_retro.jpg" alt="site web jeu fictif - Retro HightWay" class="fluide" />
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>Mini-jeu réalisé individuellement pour un examen de fin de session durant la 3ème session - compétence évalué : Canvas</p>
+                <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/retrohighway/" target="_blank">
+                        visitez le site
+                </a>
+            </div>
+            <div class="flex-demi">
+                <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/steamy/" target="_blank">
+                    <img src="images/maquette_streamy.jpg" alt="site web fictif - Streamy" class="fluide" />
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>site web fictif réalisé individuellement pour un travail pratique durant la 2ème session - compétence évalué : formulaire et requete SQL</p>
+                <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/steamy/" target="_blank">visitez le site
+                </a>
+            </div>
+            <div class="flex-demi">
+                <a href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/ultimavid/" target="_blank">
+                    <img src="images/maquette_ultimavid.jpg" alt="mini-jeu escape game" class="fluide" />
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>Mini-jeu réalisé en équipe de 3 pour un travail pratique durant la 4ème session de projet multimedia - rôle dans l'équipe : programmation et intégration</p>
+                <a class="lien-visite" href="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/ultimavid/" target="_blank">
+                        visitez le site
+                </a>
+            </div>
+        </div>
+        <div class="application" id="application">
+            <div class="flex-demi">
+                <a href="https://xd.adobe.com/embed/a9b57d2d-f8df-48dd-8db9-2feb3a55e5e4-fce6/?fullscreen" target="_blank">
+                    <img src="images/appli_phos.jpg" alt="Application fictive du festival Phos" title="Application fictive du festival PHOS" class="fluide" />
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>Application fictif pour illustrer le festival PHOS à Matane réalisé en travail pratique durant la 2ème session</p>
+                <a class="lien-visite" href="https://xd.adobe.com/embed/a9b57d2d-f8df-48dd-8db9-2feb3a55e5e4-fce6/?fullscreen" target="_blank">
+                visitez
+                </a>
+            </div>
 
-                        <div class="flex-tier box" id="clic-appli">
-                            <div class="filtre">
-                                <img src="images/exemple_application.jpg" alt="Photo de Tracy Le Blanc provenant de Pexels" class="fluide" />
-                            </div>
-                            <div class="details">
-                                <div>
-                                    <h2>Applications</h2>
-                                    <p>Des modèles d'applications mobile</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="flex-demi">
+                <a href="https://xd.adobe.com/embed/06fdb60e-5912-4ac1-ba36-5918680ea04c-53ae/?fullscreen" target="_blank">
+                    <img src="images/appli_borne.jpg" title="Application fictive d'une borne interactive d'un aquarium" alt="Application fictive de borne interactive" class="fluide" />
+                </a>
+            </div>
+            <div class="flex-demi">
+                <p>Borne interactive fictif d'un aquarium réalisé en travail pratique durant la 3ème session pour tester les capacités d'animation sur le logiciel XD</p>
+                <a class="lien-visite" href="https://xd.adobe.com/embed/06fdb60e-5912-4ac1-ba36-5918680ea04c-53ae/?fullscreen" target="_blank">
+                visitez
+                </a>
+            </div>
+        </div>
+        <div class="logo" id="logo">
+            <div class="flex-demi">
+                <img src="images/logo_Wolfoxy.jpg" alt="logo Wolfoxy" class="fluide" />
+            </div>
+            <div class="flex-demi">
+                <img src="images/logo_berceau.jpg" alt="logo Berceau" class="fluide" />
+            </div>
+            <div class="flex-demi">
+                <img src="images/logo_Melodia.jpg" alt="logo chaine youtube Melodia" class="fluide" />
+            </div>
+            <div class="flex-demi">
+                <img src="images/logo_va_immo.jpg" alt="logo vendeur immobilier Victor Andréa Perego" class="fluide" />
+            </div>
+        </div>
 
-                        <div class="flex-tier box" id="clic-logo">
-                            <div class="filtre">
-                                <img src="images/exemple_logo.jpg" alt="logo wolfoxy" class="fluide" />
-                            </div>
-                            <div class="details">
-                                <div>
-                                    <h2>Logos</h2>
-                                    <p>Des logos créé par mes soins</p>
-                                </div>
-                            </div>
+        <section id="realisations">
+            <div class="flex-container">
+                <h2 class="titre">Réalisations</h2>
+
+                <div class="flex-tier box" id="clic-maquette">
+                    <div class="filtre">
+                        <img src="images/exemple_maquette.jpg" alt="exemple de site web" class="fluide" />
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h3>Maquettes</h3>
+                            <p>Mes différents projets en rapport aux site web.</p>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section id="contact" class="container">
-                    <h1 class="flex100 title_princ">Contactez-moi</h1>
-
-                    <div class="flex-tier">
-                        <i class="fas fa-phone"></i>
-                        <h1>Cellulaire:</h1>
-                        <a href="tel:+14184298746">
-                            <p>(418) 429-8746</p>
-                        </a>
+                <div class="flex-tier box" id="clic-appli">
+                    <div class="filtre">
+                        <img src="images/exemple_application.jpg" alt="Photo de Tracy Le Blanc provenant de Pexels" class="fluide" />
                     </div>
-
-                    <div class="flex-tier">
-                        <i class="fas fa-at"></i>
-                        <h1>Courriel:</h1>
-                        <a href="mailto:remy.beaumont.qc@gmail.com">
-                            <p>remy.beaumont.qc@gmail.com</p>
-                        </a>
+                    <div class="details">
+                        <div>
+                            <h3>Applications</h3>
+                            <p>Des modèles d'applications mobile</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="flex-tier">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h1>Adresse:</h1>
-                        <p>198 Boulevard Perron</p>
-                        <p>Sainte-Félicité G0J 2K0</p>
-                        <p>Quebec, Canada</p>
+                <div class="flex-tier box" id="clic-logo">
+                    <div class="filtre">
+                        <img src="images/exemple_logo.jpg" alt="logo wolfoxy" class="fluide" />
                     </div>
+                    <div class="details">
+                        <div>
+                            <h3>Logos</h3>
+                            <p>Des logos créé par mes soins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <p class="copy">&copy;2022 Rémy Beaumont - tous droits réservés</p>
-                </section>
+        <section id="contact" class="container">
+            <h2 class="titre">Contactez-moi</h2>
+
+            <div class="flex-tier">
+                <i class="fas fa-phone"></i>
+                <h1>Cellulaire:</h1>
+                <a href="tel:+14184298746">
+                    <p>(418) 429-8746</p>
+                </a>
+            </div>
+
+            <div class="flex-tier">
+                <i class="fas fa-at"></i>
+                <h1>Courriel:</h1>
+                <a href="mailto:remy.beaumont.qc@gmail.com">
+                    <p>remy.beaumont.qc@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="flex-tier">
+                <i class="fas fa-map-marker-alt"></i>
+                <h1>Adresse:</h1>
+                <p>198 Boulevard Perron</p>
+                <p>Sainte-Félicité G0J 2K0</p>
+                <p>Quebec, Canada</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p style="display: none">
-            &copy;2022 Rémy Beaumont - tous droits réservés
+        <p class="copy">&copy;2022 Rémy Beaumont - tous droits réservés - <span>Mention légales</span>
         </p>
     </footer>
 </body>

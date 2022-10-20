@@ -4,7 +4,7 @@
 const boutonFermer = document.querySelector(".cloture");
 
 
-const accueilBlur = document.querySelector("#accueil");
+const accueilBlur = document.querySelector("#principal");
 const aproposBlur = document.querySelector("#a-propos");
 const cvBlur = document.querySelector("#moncv");
 const realisationBlur = document.querySelector("#realisations");
@@ -87,6 +87,7 @@ function fermerPageListe() {
 const boutonBurger = document.querySelector(".burger");
 const navigation = document.querySelector("nav");
 const container = document.querySelector(".main-container");
+const navSection = document.querySelectorAll(".nav-section");
 
 
 boutonBurger.addEventListener("click", evt => {
@@ -105,8 +106,7 @@ container.addEventListener("click", evt => {
 
 
 navSection.forEach(function(btn) {
-    btn.addEventListener("click", function(evt) {
-        evt.preventDefault();
+    btn.addEventListener("click", evt => {
         if (!evt.target.classList.contains("burger")) {
             navigation.classList.remove("nav-slide");
             container.classList.remove("blur");
