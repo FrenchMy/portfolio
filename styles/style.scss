@@ -1,0 +1,881 @@
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+/* Variable */
+
+$couleur-principale: #0095ff;
+$couleur-secondaire: #252525;
+$couleur-tertiaire: #171728;
+$couleur-texte-clair: #fff;
+$couleur-texte-medium: #d3d3d3;
+$font-titre: 'jura', sans-serif;
+
+/* Mixins */
+
+@mixin mobile() {
+    @media screen and (max-width: 650px) {
+        @content;
+    }
+}
+
+@mixin mille {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Général */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ::selection {
+        background: #ce0609;
+        color: #fff;
+        text-shadow: none;
+        }
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+body {
+    font-family: "Baloo 2", cursive;
+    background-color: #1d1d1d;
+    color: #f1f1f1;
+}
+
+.container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    @include mobile() {
+        height: auto;
+    }
+}
+
+.flex-container {
+    @include flex();
+    @include mobile() {
+        display: block;
+    }
+}
+
+.fluide {
+    width: 100%;
+    height: auto;
+}
+
+.blur {
+    filter: blur(3px)
+}
+
+.flex-demi {
+    flex-basis: 45%;
+}
+
+.flex-tier {
+    flex-basis: 32%;
+}
+
+.flex-quart {
+    flex-basis: 25%;
+}
+
+/************************ ANIMATION ************************/
+
+@keyframes blob {
+    0%{
+        border-radius: 50% 50% 85% 15% / 75% 50% 50% 25%;
+    }
+    25%{
+        border-radius: 20% 80% 50% 50% / 15% 50% 50% 85%;
+    }
+    50%{
+        border-radius: 85% 15% 50% 50% / 50% 20% 80% 50%;
+    }
+    75%{
+        border-radius: 50% 50% 20% 80% / 50% 85% 15% 50%;
+    }
+    100%{
+        border-radius: 50% 50% 85% 15% / 75% 50% 50% 25%;
+    }
+}
+
+@keyframes phone {
+    0% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    69% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    70% {
+        text-shadow: none;
+    }
+    71% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    72% {
+        text-shadow: none;
+    }
+    73% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    74% {
+        text-shadow: none;
+    }
+    75% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    100% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+}
+
+@keyframes mail {
+    0% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    9% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    10% {
+        text-shadow: none;
+    }
+    11% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    12% {
+        text-shadow: none;
+    }
+    13% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    14% {
+        text-shadow: none;
+    }
+    15% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    100% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+}
+
+@keyframes adresse {
+    0% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    39% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    40% {
+        text-shadow: none;
+    }
+    41% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    42% {
+        text-shadow: none;
+    }
+    43% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    44% {
+        text-shadow: none;
+    }
+    45% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+    100% {
+        text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+    }
+}
+
+/************************ NAVIGATION ************************/
+
+#navigation{
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 15px 60px;
+        text-align: center;
+        background-color: #333;
+        font-size: 20px;
+        letter-spacing: 2px;
+        z-index: 1;
+        &.nav-slide {
+            transform: translateX(0);
+        }
+        .nav-section {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            color: #eee;
+            padding: 1px 0;
+            margin: 0 20px;
+            transition: all 0.15s ease-in-out;
+            @include mobile() {
+                display: block;
+                margin: 50px 50px 75px 50px;
+            }
+            &:hover {
+                color: $couleur-principale;
+            }
+        }
+        @include mobile() {
+            display: block;
+            width: 60vw;
+            height: 100vh;
+            padding: 15vh 5px 5px;
+            transform: translateX(-100%);
+            transition: all 300ms ease-out;
+            z-index: 10;
+        }
+    }
+    .burger {
+        display: none;
+        width: 100%;
+        z-index: 9;
+        i {
+            cursor: pointer;
+            margin-left: 25px
+        }
+        @include mobile() {
+            display: block;
+            position: fixed;
+            color: #faf7f3;
+            background-image: linear-gradient(#003f6e 60%, #00000000);
+            padding: 15px;
+            font-size: 2.2em;
+            height: 100px
+        }
+    }
+}
+
+
+/************************ ACCUEIL ************************/
+
+#principal{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    @include mobile() {
+        height: auto
+    }
+    .logo {
+        display: block;
+        padding-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 38vw;
+        height: auto;
+        margin-top: 3%;
+        @include mobile() {
+            width: 90vw;
+            margin: 0;
+            padding-top: 10vw;
+        }
+    }
+    .nom {
+        flex-basis: 100%;
+        font-family: "Jura", sans-serif;
+        text-align: center;
+        color: #fff;
+        font-size: 4vw;
+        @include mobile() {
+            font-size: 10vw;
+            margin: 10px 0;
+        }
+    }
+    /* texte defilement */
+    .text {
+        text-align: center;
+        flex-basis: 100%;
+        font-size: 3vw;
+        color: $couleur-principale;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 10px 0 50px;
+        @include mobile() {
+            font-size: 7vw;
+            margin-bottom: 50px;
+        }
+        .dud {
+            color: #757575;
+        }
+    }
+}
+
+
+/************************ À PROPOS ************************/
+
+#a-propos{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: $couleur-secondaire;
+    color: $couleur-texte-medium;
+    padding: 75px 0;
+    @include mobile() {
+        height: auto;
+        padding: 35px 0;
+        align-items: center;
+    }
+    .flex-container{
+        .titre {
+        flex-basis: 100%;
+        font-size: 3vw;
+        color: $couleur-principale;
+        padding-bottom: 35px;
+        font-family: $font-titre;
+        text-align: center;
+        @include mobile() {
+            font-size: 8vw;
+        }
+        }
+        .photo {
+            flex-basis: 32%;
+            .profil {
+                width: 100%;
+                height: auto;
+                border-radius: 50% 50% 85% 15% / 75% 50% 50% 25%;
+                margin: 50px 0 0 50px;
+                animation: blob 30s linear infinite;
+                @include mobile() {
+                    width: 50%;
+                    align-items: center;
+                    margin: 0 25%;
+                }
+            }
+        }
+        .presentation {
+            margin: 30px 50px 0 0px;
+            flex-basis: 52%;
+            @include mobile() {
+                margin: 0;
+                padding: 5px;
+            }
+            p {
+                font-size: 1.5vw;
+                @include mobile() {
+                    font-size: 4vw;
+                    text-align: center;
+                    margin: 0;
+                    padding: 10px;
+                }
+                span{
+                    display: inline-block;
+                    transition: all 700ms ease;
+                    &:hover{
+                        color: $couleur-principale;
+                        text-shadow: 3px 3px 10px $couleur-principale, -3px -3px 10px $couleur-principale;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/************************ CURRICULUM VITAE ************************/
+
+#moncv {
+    padding: 75px 0;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    @include mobile() {
+        padding: 35px 0;
+        height: auto;
+    }
+    .flex-container{
+        .titre{
+            flex-basis: 100%;
+            font-size: 3vw;
+            color: $couleur-principale;
+            padding-bottom: 35px;
+            font-family: "Jura", sans-serif;
+            text-align: center;
+            @include mobile() {
+                font-size: 8vw;
+            }
+        }
+        .gauche{
+            flex-basis: 60%;
+            .cv-text {
+                h3 {
+                    text-align: center;
+                    font-size: 20px;
+                    padding: 2px;
+                    color: $couleur-texte-clair;
+                    background-color: $couleur-secondaire;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    @include mobile() {
+                        font-size: 15px;
+                    }
+                }
+                article {
+                    padding: 10px 10px 10px 0;
+                    @include mobile() {
+                        padding: 5px;
+                    }
+                    p {
+                        font-size: 15px;
+                        color: $couleur-texte-clair;
+                        margin-left: 5px;
+                        @include mobile() {
+                            font-size: 10px;
+                        }
+                    }
+                    li {
+                        font-size: 18px;
+                        color: $couleur-texte-clair;
+                        margin-left: 5px;
+                        @include mobile() {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .milieu {
+                    text-align: center;
+                    li{
+                        display: inline;
+                    }
+                    @include mobile() {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .droite{
+            flex-basis: 32%;
+            .centre {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 25px;
+                margin-bottom: 50px;
+                background: $couleur-secondaire;
+                color: $couleur-texte-clair;
+                @include mobile() {
+                    margin-bottom: 20px;
+                }
+                h2 {
+                    flex-basis: 100%;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    @include mobile() {
+                        font-size: 15px;
+                    }
+                }
+                .boite {
+                    flex-basis: 30%;
+                    margin: 10px 0;
+                    @include mobile() {
+                        margin: 10px 0;
+                    }
+                    p {
+                        text-transform: uppercase;
+                        font-size: 17px;
+                        margin: 0 0 3px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        @include mobile() {
+                            font-size: 11px;
+                        }
+                    }
+                    .skill {
+                        background: $couleur-tertiaire;
+                        border: 2px solid $couleur-principale;
+                        border-radius: 20px;
+                        img{
+                            filter: grayscale(100%);
+                            transition: filter 350ms ease-in-out;
+                            @include mobile() {
+                                filter: grayscale(25%);
+                            }
+                        }
+                        
+                        &:hover{
+                            img{
+                                filter: grayscale(0);
+                            }
+                        }
+                        @include mobile() {
+                            border: 1px solid $couleur-principale;
+                        }
+                    }
+                }
+            }
+            .cv {
+                display: block;
+                background-color: $couleur-principale;
+                border-radius: 15px;
+                border: 2px solid #000;
+                cursor: pointer;
+                color: $couleur-texte-clair;
+                font-family: "Jura", sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 15px 50px;
+                text-decoration: none;
+                width: 200px;
+                margin-left: 30%;
+                margin-right: 30%;
+                letter-spacing: 3px;
+                text-align: center;
+                transition: all 150ms ease-in;
+                &:hover{
+                    background-color: $couleur-tertiaire;
+                    border: 2px solid $couleur-principale;
+                }
+                @include mobile() {
+                    font-size: 15px;
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                }
+            }
+        }
+    }
+}
+
+
+/************************ REALISATION ************************/
+
+.cloture {
+    display: none;
+    position: fixed;
+    top: 12vh;
+    right: 3.3vw;
+    height: 50px;
+    width: 50px;
+    z-index: 110;
+    cursor: pointer;
+    @include mobile() {
+        top: 1vh;
+    }
+    i {
+        color: $couleur-principale;
+        font-size: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}
+
+#maquette {
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms ease-in;
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    left: 5vw;
+    top: 15vh;
+    height: 80vh;
+    width: 90vw;
+    z-index: 100;
+    @include flex();
+    justify-content: space-around;
+    .flex-demi {
+        margin-top: 50px;
+        @include mobile() {
+            width: 80%;
+            margin-left: 10%;
+        }
+        img {
+            border-radius: 20px;
+            box-shadow: 4px 4px 5px $couleur-texte-medium;
+        }
+        p {
+            color: $couleur-secondaire;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .lien-visite {
+            text-decoration: none;
+            color: $couleur-principale;
+            font-size: 1.5rem;
+            padding: 0px 20px;
+            border: 2px solid $couleur-principale;
+            border-radius: 10px;
+            transition: all 350ms ease-in-out;
+            &:hover{
+                color: $couleur-tertiaire;
+                border: 2px solid $couleur-tertiaire;
+                background-color: $couleur-principale;
+            }
+        }
+    }
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include mobile() {
+        display: block;
+        height: 95vh;
+        top: 2vh;
+    }
+}
+
+#application {
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms ease-in;
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    left: 5vw;
+    top: 15vh;
+    height: 80vh;
+    width: 90vw;
+    z-index: 100;
+    @include flex();
+    justify-content: space-around;
+    .flex-demi {
+        margin-top: 50px;
+        @include mobile() {
+            width: 80%;
+            margin-left: 10%;
+        }
+        img {
+            border-radius: 20px;
+            box-shadow: 4px 4px 5px $couleur-texte-medium;
+        }
+        p {
+            color: $couleur-secondaire;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .lien-visite {
+            text-decoration: none;
+            color: $couleur-principale;
+            font-size: 1.5rem;
+            padding: 0px 20px;
+            border: 2px solid $couleur-principale;
+            border-radius: 10px;
+            transition: all 350ms ease-in-out;
+            &:hover{
+                color: $couleur-tertiaire;
+                border: 2px solid $couleur-tertiaire;
+                background-color: $couleur-principale;
+            }
+        }
+    }
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include mobile() {
+        display: block;
+        height: 95vh;
+        top: 2vh;
+    }
+}
+
+#logo {
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms ease-in;
+    background-color: #ffffff;
+    position: fixed;
+    left: 5vw;
+    top: 15vh;
+    height: 80vh;
+    width: 90vw;
+    z-index: 100;
+    @include flex();
+    justify-content: space-around;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .flex-demi {
+        margin-top: 50px;
+        @include mobile() {
+            width: 80%;
+            margin-left: 10%;
+        }
+        img {
+            border-radius: 20px;
+            box-shadow: 4px 4px 5px $couleur-texte-medium;
+        }
+    }
+    
+    @include mobile() {
+        display: block;
+        height: 95vh;
+        top: 2vh;
+    }
+}
+
+#realisations {
+    background-color: $couleur-secondaire;
+    color: $couleur-texte-medium;
+    padding: 75px 0;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    @include mobile() {
+        height: auto;
+        padding: 35px 0;
+    }
+
+    .flex-container {
+        justify-content: space-around;
+        height: 100%;
+        .titre {
+            flex-basis: 100%;
+            font-size: 3vw;
+            color: $couleur-principale;
+            padding-bottom: 35px;
+            font-family: "Jura", sans-serif;
+            text-align: center;
+            @include mobile() {
+                font-size: 8vw;
+            }
+        }
+        .box {
+            background-color: $couleur-principale;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 15px;
+            @include mobile() {
+                width: 80%;
+                margin: 0 auto 25px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $couleur-texte-clair;
+            }
+            .filtre {
+                filter: grayscale(100%);
+                transition: 80ms ease-in;
+                &:hover{
+                    filter: grayscale(10%);
+                    transform: scale(1.1);
+                }
+            }
+            .details {
+                text-align: center;
+                @include mobile() {
+                    font-size: 12px;
+                }
+
+                h3 {
+                    margin: 40px 0;
+                    @include mobile() {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+/************************ CONTACT ************************/
+
+#contact {
+    color: $couleur-texte-clair;
+    padding: 75px 0;
+    @include mobile() {
+        padding: 35px 0;
+        display: block;
+    }
+    @include flex();
+    .flex-tier {
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $couleur-texte-clair;
+        }
+        i {
+            font-size: 5vw;
+            margin: 5vh 0;
+            color: $couleur-secondaire;
+            @include mobile() {
+                font-size: 10vw;
+            }
+        }
+        .fa-phone {
+            text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+            animation-name: phone;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .fa-at {
+            text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+            animation-name: mail;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .fa-map-marker-alt {
+            text-shadow: 0 0 3px #0095ff, 1px 1px 30px #0095ff, -1px -1px 30px #0095ff;
+            animation-name: adresse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        h1 {
+            margin: 20px 0;
+            letter-spacing: 2px;
+            @include mobile() {
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .titre{
+        flex-basis: 100%;
+        font-size: 3vw;
+        color: $couleur-principale;
+        padding-bottom: 35px;
+        font-family: "Jura", sans-serif;
+        text-align: center;
+        @include mobile() {
+            font-size: 8vw;
+        }
+    }
+}
+
+footer{
+    .copy {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin: 15vh auto 7vh;
+        padding: 10px;
+        color: #013c66;
+        font-size: 1.2vw;
+        @include mobile() {
+            font-size: 5vw;
+        }
+    }
+}
+

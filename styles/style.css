@@ -259,12 +259,12 @@ body {
 }
 #principal .logo {
   display: block;
-  padding-top: 5vw;
+  padding-top: 0;
   margin-left: auto;
   margin-right: auto;
   width: 38vw;
   height: auto;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 @media screen and (max-width: 650px) {
   #principal .logo {
@@ -909,12 +909,4 @@ footer .copy {
   footer .copy {
     font-size: 5vw;
   }
-}
-footer .copy span {
-  text-decoration: underline;
-  transition: color 300ms ease-in-out;
-  cursor: pointer;
-}
-footer .copy span:hover {
-  color: #d3d3d3;
-}
+}/*# sourceMappingURL=style.css.map */
