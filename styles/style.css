@@ -597,7 +597,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: 500ms ease-in;
-  background-color: #fff;
+  background-color: #171728;
   border-radius: 5px;
   position: fixed;
   left: 5vw;
@@ -612,6 +612,17 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+#maquette::-webkit-scrollbar {
+  border-radius: 50%;
+  width: 5px;
+}
+#maquette::-webkit-scrollbar-thumb {
+  background: #0095ff;
+  border-radius: 10px;
+}
+#maquette::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 #maquette .flex-demi {
   margin-top: 50px;
 }
@@ -623,10 +634,10 @@ body {
 }
 #maquette .flex-demi img {
   border-radius: 20px;
-  box-shadow: 4px 4px 5px #d3d3d3;
+  box-shadow: 4px 4px 5px #252525;
 }
 #maquette .flex-demi p {
-  color: #252525;
+  color: #fff;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
@@ -656,7 +667,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: 500ms ease-in;
-  background-color: #fff;
+  background-color: #171728;
   border-radius: 5px;
   position: fixed;
   left: 5vw;
@@ -671,6 +682,17 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+#application::-webkit-scrollbar {
+  border-radius: 50%;
+  width: 5px;
+}
+#application::-webkit-scrollbar-thumb {
+  background: #0095ff;
+  border-radius: 10px;
+}
+#application::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 #application .flex-demi {
   margin-top: 50px;
 }
@@ -682,10 +704,10 @@ body {
 }
 #application .flex-demi img {
   border-radius: 20px;
-  box-shadow: 4px 4px 5px #d3d3d3;
+  box-shadow: 4px 4px 5px #252525;
 }
 #application .flex-demi p {
-  color: #252525;
+  color: #fff;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
@@ -715,7 +737,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: 500ms ease-in;
-  background-color: #ffffff;
+  background-color: #171728;
   position: fixed;
   left: 5vw;
   top: 15vh;
@@ -729,6 +751,17 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+#logo::-webkit-scrollbar {
+  border-radius: 50%;
+  width: 5px;
+}
+#logo::-webkit-scrollbar-thumb {
+  background: #0095ff;
+  border-radius: 10px;
+}
+#logo::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 #logo .flex-demi {
   margin-top: 50px;
 }
@@ -740,7 +773,7 @@ body {
 }
 #logo .flex-demi img {
   border-radius: 20px;
-  box-shadow: 4px 4px 5px #d3d3d3;
+  box-shadow: 4px 4px 5px #252525;
 }
 @media screen and (max-width: 650px) {
   #logo {

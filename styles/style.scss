@@ -594,7 +594,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 500ms ease-in;
-    background-color: #fff;
+    background-color: $couleur-tertiaire;
     border-radius: 5px;
     position: fixed;
     left: 5vw;
@@ -602,6 +602,17 @@ body {
     height: 80vh;
     width: 90vw;
     z-index: 100;
+    &::-webkit-scrollbar {
+        border-radius: 50%;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $couleur-principale;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
     @include flex();
     justify-content: space-around;
     .flex-demi {
@@ -612,10 +623,10 @@ body {
         }
         img {
             border-radius: 20px;
-            box-shadow: 4px 4px 5px $couleur-texte-medium;
+            box-shadow: 4px 4px 5px $couleur-secondaire;
         }
         p {
-            color: $couleur-secondaire;
+            color: $couleur-texte-clair;
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
@@ -647,7 +658,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 500ms ease-in;
-    background-color: #fff;
+    background-color: $couleur-tertiaire;
     border-radius: 5px;
     position: fixed;
     left: 5vw;
@@ -655,6 +666,17 @@ body {
     height: 80vh;
     width: 90vw;
     z-index: 100;
+    &::-webkit-scrollbar {
+        border-radius: 50%;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $couleur-principale;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
     @include flex();
     justify-content: space-around;
     .flex-demi {
@@ -665,10 +687,10 @@ body {
         }
         img {
             border-radius: 20px;
-            box-shadow: 4px 4px 5px $couleur-texte-medium;
+            box-shadow: 4px 4px 5px $couleur-secondaire;
         }
         p {
-            color: $couleur-secondaire;
+            color: $couleur-texte-clair;
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
@@ -700,13 +722,24 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 500ms ease-in;
-    background-color: #ffffff;
+    background-color: $couleur-tertiaire;
     position: fixed;
     left: 5vw;
     top: 15vh;
     height: 80vh;
     width: 90vw;
     z-index: 100;
+    &::-webkit-scrollbar {
+        border-radius: 50%;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $couleur-principale;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
     @include flex();
     justify-content: space-around;
     overflow-y: scroll;
@@ -719,7 +752,7 @@ body {
         }
         img {
             border-radius: 20px;
-            box-shadow: 4px 4px 5px $couleur-texte-medium;
+            box-shadow: 4px 4px 5px $couleur-secondaire;
         }
     }
     
